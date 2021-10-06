@@ -16,7 +16,7 @@ export class AppController {
 
   @Get('/get')
   Fatman(){
-    this.client.emit<any>('sum', 45);
+    //this.client.emit<any>('sums', 45);
     return 'turn'
   }
 }

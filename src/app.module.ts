@@ -4,10 +4,12 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AccountsModule } from './modules/accounts/accounts.module';
 import { Transport, ClientsModule } from '@nestjs/microservices';
+import { CatsModule } from './modules/cats/cats.module';
 
 @Module({
   imports: [
     AccountsModule,
+    CatsModule,
     MongooseModule.forRoot(
       'mongodb+srv://kumol:kumol254@cluster0.5hz61.mongodb.net/YoFoodie?retryWrites=true&w=majority',
     ),
