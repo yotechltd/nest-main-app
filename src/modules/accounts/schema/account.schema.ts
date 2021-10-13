@@ -12,6 +12,9 @@ export class Account {
 
   @Prop()
   email: string;
+
+  @Prop()
+  age: number;
 }
 
 export const AccountSchema = SchemaFactory.createForClass(Account);
